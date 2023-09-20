@@ -10,7 +10,7 @@ import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-[#6E9320] py-4">
-      <div className="w-[80%] mx-auto flex justify-between ">
+      <div className="w-[80%] mx-auto flex md:flex-row flex-col gap-8 justify-between ">
         <div className="flex flex-col text-white">
           <p className="text-xl font-semibold">Turning Point</p>
           <p className="w-[232px]">

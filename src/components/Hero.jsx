@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div
       id="#home"
-      className="w-[100%] flex flex-col-reverse justify-start gap-24 items-center h-[100vh]"
+      className="w-[100%] flex flex-col-reverse justify-start md:gap-24 gap-8 items-center h-[120vh] md:h-[100vh]"
       style={{
         backgroundImage: `url("/hero.png")`,
         backgroundSize: "cover",
@@ -12,8 +12,8 @@ const Hero = () => {
         backgroundPosition: "center center",
       }}
     >
-      <div className="w-[80%] mx-auto flex flex-col bg-[#6E9320]  justify-center items-center">
-        <div className="p-8 grid grid-cols-4 ">
+      <div className="md:w-[80%] w-[90%] mx-auto flex flex-col bg-[#6E9320]  justify-center items-center">
+        <div className="p-8 grid md:grid-cols-4 ">
           <div className="flex gap-1 items-start">
             <img
               src="/vector1.svg"
@@ -59,10 +59,10 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center">
-        <p className="text-white text-7xl w-[50%] font-bold">
+        <p className="text-white md:text-7xl text-5xl md:w-[50%] w-[80%] font-bold">
           Harvesting Kenya's Finest: TurningPoint Farm Produce
         </p>
-        <p className="text-4xl text-white w-[50%]  text-center font-semibold">
+        <p className="md:text-4xl text-xl text-white md:w-[50%] w-[80%]  text-center font-semibold">
           Fully insured with a total satisfaction guarantee and amazing customer
           support.
         </p>

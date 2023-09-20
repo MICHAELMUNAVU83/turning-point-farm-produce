@@ -7,14 +7,14 @@ const ContactUs = () => {
         Contact Us
       </p>
       <div className="w-[80%]  mx-auto">
-        <div className="w-[100%] flex items-center justify-between">
-          <div className="w-[48%] ">
+        <div className="w-[100%] flex md:flex-row flex-col items-center justify-between">
+          <div className="md:w-[48%] ">
             <img
               src="/contact.svg"
               className="w-[100%] h-[548px] object-contain"
             />
           </div>
-          <div className="w-[48%] flex flex-col gap-4">
+          <div className="md:w-[48%] flex flex-col gap-4">
             <form className="w-[100%] flex flex-col gap-4">
               <div className="w-[100%] flex flex-col justify-center items-center">
                 <p className="text-[#076C05] text-2xl  my-3 font-bold ">

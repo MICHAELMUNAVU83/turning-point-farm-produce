@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiLocationMarker } from "react-icons/hi";
 import { AiFillMail } from "react-icons/ai";
 import { IoIosCall } from "react-icons/io";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const NavBar = () => {
+  const [nav, setNav] = useState(false);
+  const toggleNav = () => {
+    setNav(!nav);
+  };
   return (
-    <div className="w-[100%] bg-white">
-      <div className="w-[80%] mx-auto flex justify-between ">
+    <div className="w-[100%] fixed bg-white">
+      <div className="md:w-[80%] mx-auto md:flex hidden justify-between ">
         <div className="w-[50%] flex  items-center gap-2 border-r-[1px] border-[#927A7A]">
           {" "}
           <HiLocationMarker className="text-[#6E9320]" />
@@ -22,10 +27,10 @@ const NavBar = () => {
         </div>
       </div>
       <p className="bg-[rgb(146,122,122)] h-[1px] w-[100%]" />
-      <div className="py-4 w-[80%] flex justify-between mx-auto">
+      <div className="py-4 md:w-[80%] w-[95%]  flex justify-between mx-auto">
         <p className="text-[#065804] font-semibold text-2xl">Turning Point</p>
 
-        <div className="gap-4 flex items-center">
+        <div className="gap-4 md:flex hidden  items-center">
           <a
             href="#home"
             className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
@@ -54,6 +59,44 @@ const NavBar = () => {
             Get Started
           </button>
         </div>
+        <AiOutlineMenu className="text-4xl md:hidden" onClick={toggleNav} />
+      </div>
+      <div
+        className={
+          nav
+            ? "sm:hidden absolute top-0 right-0 left-0 bottom-0 flex justify-center items-center  w-full h-screen bg-white text-black text-center duration-300 ease-in-out"
+            : "sm:hidden absolute top-0 right-0 left-[-100%] bottom-0 flex justify-center items-center w-full h-screen bg-white  text-black text-center duration-300 ease-in-out"
+        }
+      >
+        <p className="absolute top-4 right-4">
+          <AiOutlineClose className="text-4xl" onClick={toggleNav} />
+        </p>
+        <ul onClick={toggleNav} className="flex flex-col text-2xl gap-8">
+          <a
+            href="#home"
+            className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
+          >
+            About Us
+          </a>
+          <a
+            href="#products"
+            className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
+          >
+            Products
+          </a>
+          <a
+            href="#contact"
+            className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
+          >
+            Contact Us
+          </a>
+        </ul>
       </div>
     </div>
   );

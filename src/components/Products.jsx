@@ -31,7 +31,7 @@ const Products = () => {
     >
       <p className="text-[#076C05] text-5xl   font-bold">Products</p>
 
-      <div className="grid grid-cols-3 w-[80%] my-8 mx-auto gap-12">
+      <div className="grid md:grid-cols-3 w-[80%] my-8 mx-auto gap-12">
         {products.map((product) => (
           <div className="flex flex-col hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer shadow-sm shadow-gray-300 justify-center items-center">
             <img
