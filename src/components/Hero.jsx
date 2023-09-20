@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div
-      id="home"
+      id="#home"
       className="w-[100%] flex flex-col-reverse justify-start gap-24 items-center h-[100vh]"
       style={{
         backgroundImage: `url("/hero.png")`,
