@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const AboutUs = () => {
   return (
     <div id="about" className="bg-white py-8">
@@ -12,7 +12,9 @@ const AboutUs = () => {
               exporter of fresh horticultural products and vegetables. Our
               journey began in 2023, driven by a passion for innovation,
               quality, and sustainability. Join us in bringing farm-fresh
-              excellence to your table.
+              excellence to your table.  <Link to="/about" className="text-[#076C05] font-semibold">
+                Read More
+              </Link>
             </p>
             <p className="text-[#076C05] font-semibold text-2xl">
               Why Choose Us?

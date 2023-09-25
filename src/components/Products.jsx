@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   const products = [
@@ -44,34 +45,6 @@ const Products = () => {
       description:
         "also known as snap or green beans, and locally in Kenya as mishiri, are a major export crop.French beans are a member of the Fabaceae family alongside the common bean. They are specifically bred and cultivated for their pods versus their seeds ",
     },
-    {
-      id: 7,
-      image: "/crop7.svg",
-      name: "Chillies",
-      description:
-        "also known as snap or green beans, and locally in Kenya as mishiri, are a major export crop.French beans are a member of the Fabaceae family alongside the common bean. They are specifically bred and cultivated for their pods versus their seeds ",
-    },
-    {
-      id: 8,
-      image: "/crop8.svg",
-      name: "Assorted herbs",
-      description:
-        "also known as snap or green beans, and locally in Kenya as mishiri, are a major export crop.French beans are a member of the Fabaceae family alongside the common bean. They are specifically bred and cultivated for their pods versus their seeds ",
-    },
-    {
-      id: 9,
-      image: "/crop9.svg",
-      name: "Purple Passion Fruits",
-      description:
-        "also known as snap or green beans, and locally in Kenya as mishiri, are a major export crop.French beans are a member of the Fabaceae family alongside the common bean. They are specifically bred and cultivated for their pods versus their seeds ",
-    },
-    {
-      id: 10,
-      image: "/crop10.svg",
-      name: "Mangoes",
-      description:
-        "also known as snap or green beans, and locally in Kenya as mishiri, are a major export crop.French beans are a member of the Fabaceae family alongside the common bean. They are specifically bred and cultivated for their pods versus their seeds ",
-    },
   ];
   return (
     <div
@@ -96,6 +69,12 @@ const Products = () => {
           </div>
         ))}
       </div>
+
+      <Link to="/products">
+        <button className="bg-[#6E9320] rounded-md text-white p-2">
+          View All Products
+        </button>
+      </Link>
     </div>
   );
 };

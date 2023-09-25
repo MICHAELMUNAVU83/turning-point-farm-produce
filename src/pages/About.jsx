@@ -13,7 +13,7 @@ const About = () => {
               exporter of fresh horticultural products and vegetables. Our
               journey began in 2023, driven by a passion for innovation,
               quality, and sustainability. Join us in bringing farm-fresh
-              excellence to your table.
+              excellence to your table.{" "}
             </p>
             <p className="text-[#076C05] font-semibold text-2xl">
               Why Choose Us?
@@ -96,7 +96,7 @@ const About = () => {
 
       <div className="w-[80%] py-8 flex flex-col gap-8 items-center justify-center mx-auto">
         <p className="text-[#076C05] font-semibold text-2xl">Global Reach</p>
-        <p className="w-[80%] text-xl mx-auto text-[#626262]">
+        <p className="md:w-[80%] w-[90%] text-xl mx-auto text-[#626262]">
           Our commitment to quality knows no borders. We export our produce to
           customers around the world, and our global partners trust us for
           consistent excellence.
