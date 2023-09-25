@@ -29,7 +29,7 @@ const NavBar = () => {
       </div>
       <p className="bg-[rgb(146,122,122)] h-[1px] w-[100%]" />
       <div className="py-4 md:w-[80%] w-[95%]  flex justify-between mx-auto">
-        <p className="text-[#065804] font-semibold text-2xl">Turning Point</p>
+        <Link to="/" className="text-[#065804] font-semibold text-2xl">Turning Point</Link>
 
         <div className="gap-4 md:flex hidden  items-center">
           <Link
@@ -73,12 +73,12 @@ const NavBar = () => {
           <AiOutlineClose className="text-4xl" onClick={toggleNav} />
         </p>
         <ul onClick={toggleNav} className="flex flex-col text-2xl gap-8">
-          <a
-            href="/#home"
+          <Link
+            to="/"
             className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
           >
             Home
-          </a>
+          </Link>
           <Link
             to="/about"
             className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
