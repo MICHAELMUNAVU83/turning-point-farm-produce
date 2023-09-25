@@ -3,6 +3,7 @@ import { HiLocationMarker } from "react-icons/hi";
 import { AiFillMail } from "react-icons/ai";
 import { IoIosCall } from "react-icons/io";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -10,7 +11,7 @@ const NavBar = () => {
     setNav(!nav);
   };
   return (
-    <div className="w-[100%] fixed bg-white">
+    <div className="w-[100%] z-10 fixed bg-white">
       <div className="md:w-[80%] mx-auto md:flex hidden justify-between ">
         <div className="w-[50%] flex  items-center gap-2 border-r-[1px] border-[#927A7A]">
           {" "}
@@ -31,30 +32,30 @@ const NavBar = () => {
         <p className="text-[#065804] font-semibold text-2xl">Turning Point</p>
 
         <div className="gap-4 md:flex hidden  items-center">
-          <a
-            href="#home"
+          <Link
+            to="/#home"
             className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
           >
             Home
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            to="/about"
             className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
           >
             About Us
-          </a>
-          <a
-            href="#products"
+          </Link>
+          <Link
+            to="/#products"
             className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
           >
             Products
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/#contact"
             className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
           >
             Contact Us
-          </a>
+          </Link>
           <button className="bg-[#6E9320] rounded-md text-white p-2">
             Get Started
           </button>
@@ -73,29 +74,29 @@ const NavBar = () => {
         </p>
         <ul onClick={toggleNav} className="flex flex-col text-2xl gap-8">
           <a
-            href="#home"
+            href="/#home"
             className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
           >
             Home
           </a>
-          <a
-            href="#about"
+          <Link
+            to="/about"
             className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
           >
             About Us
-          </a>
-          <a
-            href="#products"
+          </Link>
+          <Link
+            href="/#products"
             className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
           >
             Products
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/#contact"
             className="hover:text-[#076C05] transition-all ease-in-out duration-500 cursor-pointer "
           >
             Contact Us
-          </a>
+          </Link>
         </ul>
       </div>
     </div>

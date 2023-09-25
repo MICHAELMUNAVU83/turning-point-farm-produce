@@ -1,24 +1,24 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Footer from "./components/Footer";
-import Products from "./components/Products";
-import AboutUs from "./components/AboutUs";
-import ContactUs from "./components/ContactUs";
-import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
-function App() {
-  const [count, setCount] = useState(0);
 
+import NavBar from "./components/NavBar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+function App() {
   return (
     <>
-      <NavBar />
-      <Hero />
-      <AboutUs />
-      <Products />
-      <ContactUs />
-      <Footer />
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }

@@ -11,15 +11,64 @@ const Products = () => {
     },
     {
       id: 2,
-      image: "/crop1.svg",
-      name: "French Beans",
+      image: "/crop2.svg",
+      name: "Snow Peas",
       description:
         "also known as snap or green beans, and locally in Kenya as mishiri, are a major export crop.French beans are a member of the Fabaceae family alongside the common bean. They are specifically bred and cultivated for their pods versus their seeds ",
     },
     {
       id: 3,
-      image: "/crop1.svg",
-      name: "French Beans",
+      image: "/crop3.svg",
+      name: "Sugar Snaps",
+      description:
+        "also known as snap or green beans, and locally in Kenya as mishiri, are a major export crop.French beans are a member of the Fabaceae family alongside the common bean. They are specifically bred and cultivated for their pods versus their seeds ",
+    },
+    {
+      id: 4,
+      image: "/crop4.svg",
+      name: "Garden Peas",
+      description:
+        "also known as snap or green beans, and locally in Kenya as mishiri, are a major export crop.French beans are a member of the Fabaceae family alongside the common bean. They are specifically bred and cultivated for their pods versus their seeds ",
+    },
+    {
+      id: 5,
+      image: "/crop5.svg",
+      name: "Maize",
+      description:
+        "also known as snap or green beans, and locally in Kenya as mishiri, are a major export crop.French beans are a member of the Fabaceae family alongside the common bean. They are specifically bred and cultivated for their pods versus their seeds ",
+    },
+    {
+      id: 6,
+      image: "/crop6.svg",
+      name: "Baby Carrots",
+      description:
+        "also known as snap or green beans, and locally in Kenya as mishiri, are a major export crop.French beans are a member of the Fabaceae family alongside the common bean. They are specifically bred and cultivated for their pods versus their seeds ",
+    },
+    {
+      id: 7,
+      image: "/crop7.svg",
+      name: "Chillies",
+      description:
+        "also known as snap or green beans, and locally in Kenya as mishiri, are a major export crop.French beans are a member of the Fabaceae family alongside the common bean. They are specifically bred and cultivated for their pods versus their seeds ",
+    },
+    {
+      id: 8,
+      image: "/crop8.svg",
+      name: "Assorted herbs",
+      description:
+        "also known as snap or green beans, and locally in Kenya as mishiri, are a major export crop.French beans are a member of the Fabaceae family alongside the common bean. They are specifically bred and cultivated for their pods versus their seeds ",
+    },
+    {
+      id: 9,
+      image: "/crop9.svg",
+      name: "Purple Passion Fruits",
+      description:
+        "also known as snap or green beans, and locally in Kenya as mishiri, are a major export crop.French beans are a member of the Fabaceae family alongside the common bean. They are specifically bred and cultivated for their pods versus their seeds ",
+    },
+    {
+      id: 10,
+      image: "/crop10.svg",
+      name: "Mangoes",
       description:
         "also known as snap or green beans, and locally in Kenya as mishiri, are a major export crop.French beans are a member of the Fabaceae family alongside the common bean. They are specifically bred and cultivated for their pods versus their seeds ",
     },
