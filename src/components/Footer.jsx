@@ -1,11 +1,12 @@
 import React from "react";
-import { BiLogoWhatsapp } from "react-icons/bi";
-import { FaFacebookF } from "react-icons/fa";
+
 import { HiLocationMarker } from "react-icons/hi";
 import { AiFillMail } from "react-icons/ai";
 import { IoIosCall } from "react-icons/io";
 import { AiOutlineYoutube } from "react-icons/ai";
-import { FaTwitter } from "react-icons/fa";
+
+import { AiOutlineInstagram } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -23,15 +24,7 @@ const Footer = () => {
               rel="noreferrer"
               className="H-[50px] W-[50px] bg-[#A8D34B]  flex justify-center items-center"
             >
-              <FaFacebookF className="text-white text-3xl p-2" />
-            </a>
-            <a
-              href="https://www.facebook.com/turningpointph"
-              target="_blank"
-              rel="noreferrer"
-              className="H-[50px] W-[50px] bg-[#A8D34B]  flex justify-center items-center"
-            >
-              <BiLogoWhatsapp className="text-white text-3xl p-2" />
+              <AiOutlineInstagram className="text-white text-3xl p-2" />
             </a>
             <a
               href="https://www.facebook.com/turningpointph"
@@ -47,7 +40,7 @@ const Footer = () => {
               rel="noreferrer"
               className="H-[50px] W-[50px] bg-[#A8D34B]  flex justify-center items-center"
             >
-              <FaTwitter className="text-white text-3xl p-2" />
+              <AiFillLinkedin className="text-white text-3xl p-2" />
             </a>
           </div>
         </div>

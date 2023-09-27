@@ -11,7 +11,7 @@ const NavBar = () => {
     setNav(!nav);
   };
   return (
-    <div className="w-[100%] z-10 fixed bg-white">
+    <div className="w-[100%] z-10  bg-white">
       <div className="md:w-[80%] mx-auto md:flex hidden justify-between ">
         <div className="w-[50%] flex  items-center gap-2 border-r-[1px] border-[#927A7A]">
           {" "}
@@ -29,7 +29,9 @@ const NavBar = () => {
       </div>
       <p className="bg-[rgb(146,122,122)] h-[1px] w-[100%]" />
       <div className="py-4 md:w-[80%] w-[95%]  flex justify-between mx-auto">
-        <Link to="/" className="text-[#065804] font-semibold text-2xl">Turning Point</Link>
+        <Link to="/" className="text-[#065804] font-semibold text-2xl">
+          Turning Point
+        </Link>
 
         <div className="gap-4 md:flex hidden  items-center">
           <Link

@@ -8,42 +8,44 @@ const Products = () => {
       image: "/crop1.svg",
       name: "French Beans",
       description:
-        "A delicious and nutritious vegetable. They are a major export crop and a member of the Fabaceae family. Specifically bred and cultivated for their pods versus their seeds.",
+        "Our French beans thrive in the fertile fields of Kenya's Rift Valley, Eastern and Central regions. These slender green beans boast a vibrant hue and a crisp texture. French beans promote digestive health and offer a burst of green goodness. Each batch is meticulously sorted, packed in bags and punnets.",
     },
+
     {
       id: 2,
-      image: "/crop2.svg",
-      name: "Snow Peas",
+      image: "/crop3.svg",
+      name: "Mangetout (Snow Peas):",
       description:
-        "A delightful vegetable locally known in Kenya as mishiri. They are a major export crop and belong to the Fabaceae family. Specifically bred and cultivated for their pods rather than their seeds.",
+        "Our Mangetout, or snow peas, flourish in the cool highlands of Kenya. With their tender, flat pods, Mangetout peas are a delicate shade of green. Low in calories and high in vitamins, they add a healthy crunch to your meals while boosting your nutrient intake. Mangetout peas are hand-picked, sorted, and delicately packed in perforated pouches to maintain their crispness during export.",
     },
     {
       id: 3,
-      image: "/crop3.svg",
+      image: "/crop2.svg",
       name: "Sugar Snaps",
       description:
-        "A sweet and crunchy vegetable, sometimes referred to as snap or green beans. In Kenya, they are known as mishiri and are a major export crop. They are part of the Fabaceae family and cultivated for their pods with deliciously sweet seeds inside.",
+        "Grown in the lush fields of high attitudes of central Kenya. These plump, edible-pod peas offer a sweet, juicy crunch. Packed with antioxidants, Sugar Snaps are a tasty source of vitamins and fiber. Sugar Snaps are carefully graded and packed in ventilated pouches to preserve their natural sweetness and texture.",
     },
     {
       id: 4,
       image: "/crop4.svg",
       name: "Garden Peas",
       description:
-        "A popular vegetable in many dishes, also known as snap or green beans in Kenya (mishiri). They are a significant export crop and belong to the Fabaceae family. Grown for their pods containing tasty peas.",
+        "Our Garden Peas flourish in the highlands of Central Kenya. These tender green peas are plump and round, perfect for culinary creations. Rich in protein and vitamins, Garden Peas are a wholesome addition to your diet. Garden Peas are hand-harvested, and packed in punnets alongside ice bags, ensuring they retain their quality.",
     },
     {
       id: 5,
       image: "/crop5.svg",
-      name: "Maize",
+      name: "Baby Corn",
       description:
-        "A staple crop essential in many diets worldwide. Maize is a cereal grain cultivated for its edible kernels, used in various food products.",
+        "Grown in the fertile soils of Kenya's Rift Valley and the Eastern regions, our Baby Corn thrives in the warm climate. These miniature cobs are tender and pale, with a sweet, mild flavor. Low in calories and high in fiber, Baby Corn adds a delightful crunch to your dishes. They are selected, sorted, and packed in eco-friendly, moisture-resistant packaging, ensuring their freshness on arrival.",
     },
+
     {
       id: 6,
-      image: "/crop6.svg",
+      image: "/crop7.svg",
       name: "Baby Carrots",
       description:
-        "A delightful and nutritious root vegetable. They are a popular vegetable, not called mishiri in Kenya. Baby carrots belong to the Apiaceae family and are known for their sweet flavor, suitable as a healthy snack option.",
+        "Our Baby Carrots are nurtured in the sun-drenched fields of Eastern Kenya. Petite and vibrant orange, these baby carrots are a visual delight. Packed with beta-carotene and vitamins, Baby Carrots are a nutritious snack or culinary ingredient. Each Baby Carrot is hand-picked, washed, and packed in perforated bags or punnets to maintain their crispness and vibrant color during export.",
     },
   ];
 
@@ -56,16 +58,16 @@ const Products = () => {
 
       <div className="grid md:grid-cols-3 w-[80%] my-8 mx-auto gap-12">
         {products.map((product) => (
-          <div className="flex flex-col hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer shadow-sm shadow-gray-300 justify-center items-center">
+          <div className="flex flex-col hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer shadow-md shadow-gray-400  justify-center items-center">
             <img
               src={product.image}
               className="h-[280px] rounded-t-md object-cover w-[100%]"
             />
-            <div className="h-[250px] bg-white rounded-b-md  p-2">
+            <div className="h-[300px] bg-white rounded-b-md  p-2">
               <span className="text-[#0B8308] font-semibold">
                 {product.name}
               </span>{" "}
-              , {product.description}
+              <span className="text-sm">, {product.description}</span>
             </div>
           </div>
         ))}
