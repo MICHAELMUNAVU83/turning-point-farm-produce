@@ -49,7 +49,7 @@ const Hero = () => {
               <p className="font-bold text-xl">Customer Focus</p>
               <p className="text-xs">
                 To understand and meet our customer needs by providing
-                exceptional service through meeting their expectations always.¬¬
+                exceptional service through meeting their expectations always.
               </p>
             </div>
           </div>
@@ -70,16 +70,19 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center">
-        <p className="text-white md:text-7xl text-5xl md:w-[50%] w-[80%] font-bold">
+        <p className="text-white md:text-6xl text-5xl md:w-[50%] w-[80%] font-bold">
           Harvesting Kenya's Finest: TurningPoint Farm Produce
         </p>
         <p className="md:text-4xl text-xl text-white md:w-[50%] w-[80%]  text-center font-semibold">
           Fully insured with a total satisfaction guarantee and amazing customer
           support.
         </p>
-        <button className="bg-[#A8D34B] mt-4 text-white p-4 rounded-md">
+        <a
+          href="#about"
+          className="bg-[#A8D34B] hover:scale-105 transition-all duration-500 ease-in-out  mt-4 text-white p-4 rounded-md"
+        >
           Discover More
-        </button>
+        </a>
       </div>
     </div>
   );
