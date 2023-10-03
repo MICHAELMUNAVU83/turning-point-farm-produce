@@ -1,8 +1,70 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactUs = () => {
+  const form = useRef();
+  const [name, setName] = useState("");
+  const [phone_number, setPhone_number] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    if (!name || !email || !subject || !message || !phone_number) {
+      toast.error("Email not sent ,Please fill in all fields", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    } else {
+      emailjs
+        .sendForm(
+          "service_d13ofqn",
+          "template_8why5gl",
+          form.current,
+          "XTiACRcSwpOdK0Fms"
+        )
+        .then(
+          (result) => {
+            setName("");
+            setEmail("");
+            setSubject("");
+            setMessage("");
+            setPhone_number("");
+
+            setTimeout(() => {
+              toast.success("Email Sent , I will get back to you soon", {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+              });
+            }, 1000);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+  };
+
   return (
     <div id="contact" className="py-8 w-[100%]">
+      <ToastContainer />
       <p className="text-center text-[#076C05] text-4xl font-bold  ">
         Contact Us
       </p>
@@ -15,7 +77,11 @@ const ContactUs = () => {
             />
           </div>
           <div className="md:w-[48%] flex flex-col gap-4">
-            <form className="w-[100%] flex flex-col gap-4">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="w-[100%] flex flex-col gap-4"
+            >
               <div className="w-[100%] flex flex-col justify-center items-center">
                 <p className="text-[#076C05] text-2xl  my-3 font-bold ">
                   Get in Touch
@@ -25,11 +91,17 @@ const ContactUs = () => {
                     <input
                       type="text"
                       placeholder="Name"
+                      name="name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       className="w-[48%] h-[40px] border-0 bg-[#DFDFDF] text-[#626262]  focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent placeholder-[#626262] py-2 px-4"
                     />
                     <input
                       type="text"
                       placeholder="Email"
+                      name="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       className="w-[48%] h-[40px] border-0 bg-[#DFDFDF] text-[#626262]  focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent placeholder-[#626262] py-2 px-4"
                     />
                   </div>
@@ -37,11 +109,17 @@ const ContactUs = () => {
                     <input
                       type="text"
                       placeholder="Phone Number"
+                      name="phone_number"
+                      value={phone_number}
+                      onChange={(e) => setPhone_number(e.target.value)}
                       className="w-[48%] h-[40px] border-0 bg-[#DFDFDF] text-[#626262]  focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent placeholder-[#626262] py-2 px-4"
                     />
                     <input
                       type="text"
                       placeholder="Subject"
+                      name="subject"
+                      value={subject}
+                      onChange={(e) => setSubject(e.target.value)}
                       className="w-[48%] h-[40px] border-0 bg-[#DFDFDF] text-[#626262]  focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent placeholder-[#626262] py-2 px-4"
                     />
                   </div>
@@ -49,11 +127,17 @@ const ContactUs = () => {
                   <textarea
                     type="text"
                     placeholder="Message"
+                    name="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     className="w-[100%] h-[90px] border-0 bg-[#DFDFDF] text-[#626262]  focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent placeholder-[#626262] py-2 px-4"
                   />
                 </div>
                 <div className="w-[100%] mt-8">
-                  <button className="bg-[#1FBF1C] px-6 py-2 text-white hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer">
+                  <button
+                    type="submit"
+                    className="bg-[#1FBF1C] px-6 py-2 text-white hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer"
+                  >
                     Send Message
                   </button>
                 </div>
