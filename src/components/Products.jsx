@@ -5,7 +5,7 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      image: "/frenchbeans.jpg",
+      image: "/snowpeas.jpg",
       name: "French Beans",
       description:
         "Our French beans thrive in the fertile fields of Kenya's Rift Valley, Eastern and Central regions. These slender green beans boast a vibrant hue and a crisp texture. French beans promote digestive health and offer a burst of green goodness. Each batch is meticulously sorted, packed in bags and punnets.",
@@ -13,7 +13,7 @@ const Products = () => {
 
     {
       id: 2,
-      image: "/snowpeas.jpg",
+      image: "/frenchbeans.jpg",
       name: "Mangetout (Snow Peas):",
       description:
         "Our Mangetout, or snow peas, flourish in the cool highlands of Kenya. With their tender, flat pods, Mangetout peas are a delicate shade of green. Low in calories and high in vitamins, they add a healthy crunch to your meals while boosting your nutrient intake. Mangetout peas are hand-picked, sorted, and delicately packed in perforated pouches to maintain their crispness during export.",
@@ -42,7 +42,7 @@ const Products = () => {
 
     {
       id: 6,
-      image: "/crop7.svg",
+      image: "/babycarrots.jpg",
       name: "Baby Carrots",
       description:
         "Our Baby Carrots are nurtured in the sun-drenched fields of Eastern Kenya. Petite and vibrant orange, these baby carrots are a visual delight. Packed with beta-carotene and vitamins, Baby Carrots are a nutritious snack or culinary ingredient. Each Baby Carrot is hand-picked, washed, and packed in perforated bags or punnets to maintain their crispness and vibrant color during export.",

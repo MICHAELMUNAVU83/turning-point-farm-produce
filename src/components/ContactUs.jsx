@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
+import { useForm, ValidationError } from "@formspree/react";
 
 const ContactUs = () => {
   const form = useRef();
@@ -11,6 +12,10 @@ const ContactUs = () => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [state, handleSubmit] = useForm("xnqkobod");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,45 +31,13 @@ const ContactUs = () => {
         progress: undefined,
         theme: "colored",
       });
-    } else {
-      emailjs
-        .sendForm(
-          "service_if52mio",
-          "template_8why5gl",
-          form.current,
-          "XTiACRcSwpOdK0Fms"
-        )
-        .then(
-          (result) => {
-            setName("");
-            setEmail("");
-            setSubject("");
-            setMessage("");
-            setPhone_number("");
-
-            setTimeout(() => {
-              toast.success("Email Sent , I will get back to you soon", {
-                position: "top-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-              });
-            }, 1000);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
     }
   };
 
   return (
     <div id="contact" className="py-8 w-[100%]">
       <ToastContainer />
+
       <p className="text-center text-[#076C05] text-4xl font-bold  ">
         Contact Us
       </p>
@@ -77,11 +50,7 @@ const ContactUs = () => {
             />
           </div>
           <div className="md:w-[48%] flex flex-col gap-4">
-            <form
-              ref={form}
-              onSubmit={sendEmail}
-              className="w-[100%] flex flex-col gap-4"
-            >
+            <form action="https://formspree.io/f/xnqkobod" method="POST">
               <div className="w-[100%] flex flex-col justify-center items-center">
                 <p className="text-[#076C05] text-2xl  my-3 font-bold ">
                   Get in Touch

@@ -85,7 +85,8 @@ const Footer = () => {
       </div>
       <p className="w-[100%] bg-white h-[2px] my-2"></p>
       <p className="text-center text-white">
-        Copyright © 2023 TurningPoint, All rights reserved.
+        Copyright © 2023 TurningPoint, All rights reserved.{" "}
+        <img src="/Logo White.svg" alt="logo" className="w-24" />
       </p>
     </div>
   );
