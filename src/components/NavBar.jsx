@@ -29,7 +29,11 @@ const NavBar = () => {
       </div>
       <p className="bg-[rgb(146,122,122)] h-[1px] w-[100%]" />
       <div className="py-4 md:w-[80%] w-[95%]  flex justify-between mx-auto">
-        <Link to="/" className="text-[#065804] font-semibold text-2xl">
+        <Link
+          to="/"
+          className="text-[#065804] flex gap-2 items-center font-semibold text-2xl"
+        >
+          <img src="/Logo Colored.svg" alt="logo" className="w-12" />
           Turning Point
         </Link>
 
