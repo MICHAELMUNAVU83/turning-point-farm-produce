@@ -29,7 +29,7 @@ const ContactUs = () => {
     } else {
       emailjs
         .sendForm(
-          "service_d13ofqn",
+          "service_if52mio",
           "template_8why5gl",
           form.current,
           "XTiACRcSwpOdK0Fms"
