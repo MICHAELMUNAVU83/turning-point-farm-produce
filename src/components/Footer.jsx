@@ -19,23 +19,18 @@ const Footer = () => {
           </p>
           <div className="flex gap-2 items-center">
             <a
-              href="https://www.facebook.com/turningpointph"
+              href="https://instagram.com/turningpointfarmproduce_ke?igshid=MmU2YjMzNjRlOQ=="
               target="_blank"
               rel="noreferrer"
               className="H-[50px] W-[50px] bg-[#A8D34B]  flex justify-center items-center"
             >
               <AiOutlineInstagram className="text-white text-3xl p-2" />
             </a>
-            <a
-              href="https://www.facebook.com/turningpointph"
-              target="_blank"
-              rel="noreferrer"
-              className="H-[50px] W-[50px] bg-[#A8D34B]  flex justify-center items-center"
-            >
+            <a className="H-[50px] W-[50px] bg-[#A8D34B]  flex justify-center items-center">
               <AiOutlineYoutube className="text-white text-3xl p-2" />
             </a>
             <a
-              href="https://www.facebook.com/turningpointph"
+              href="https://www.linkedin.com/company/turning-point-farm-produce/"
               target="_blank"
               rel="noreferrer"
               className="H-[50px] W-[50px] bg-[#A8D34B]  flex justify-center items-center"
@@ -56,7 +51,7 @@ const Footer = () => {
           </div>
           <div className="flex gap-2 items-center">
             <IoIosCall className="text-white text-3xl p-2" />
-            <p>+(254) 726-237650</p>
+            <p>+254114285301</p>
           </div>
         </div>
         <div className="flex gap-2 text-white flex-col">

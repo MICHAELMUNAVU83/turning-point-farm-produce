@@ -5,7 +5,7 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      image: "/crop1.svg",
+      image: "/frenchbeans.jpg",
       name: "French Beans",
       description:
         "Our French beans thrive in the fertile fields of Kenya's Rift Valley, Eastern and Central regions. These slender green beans boast a vibrant hue and a crisp texture. French beans promote digestive health and offer a burst of green goodness. Each batch is meticulously sorted, packed in bags and punnets.",
@@ -13,28 +13,28 @@ const Products = () => {
 
     {
       id: 2,
-      image: "/crop3.svg",
+      image: "/snowpeas.jpg",
       name: "Mangetout (Snow Peas):",
       description:
         "Our Mangetout, or snow peas, flourish in the cool highlands of Kenya. With their tender, flat pods, Mangetout peas are a delicate shade of green. Low in calories and high in vitamins, they add a healthy crunch to your meals while boosting your nutrient intake. Mangetout peas are hand-picked, sorted, and delicately packed in perforated pouches to maintain their crispness during export.",
     },
     {
       id: 3,
-      image: "/crop2.svg",
+      image: "/sugarsnaps.jpg",
       name: "Sugar Snaps",
       description:
         "Grown in the lush fields of high attitudes of central Kenya. These plump, edible-pod peas offer a sweet, juicy crunch. Packed with antioxidants, Sugar Snaps are a tasty source of vitamins and fiber. Sugar Snaps are carefully graded and packed in ventilated pouches to preserve their natural sweetness and texture.",
     },
     {
       id: 4,
-      image: "/crop4.svg",
+      image: "/gardenpeas.jpg",
       name: "Garden Peas",
       description:
         "Our Garden Peas flourish in the highlands of Central Kenya. These tender green peas are plump and round, perfect for culinary creations. Rich in protein and vitamins, Garden Peas are a wholesome addition to your diet. Garden Peas are hand-harvested, and packed in punnets alongside ice bags, ensuring they retain their quality.",
     },
     {
       id: 5,
-      image: "/crop5.svg",
+      image: "/babycorn.jpg",
       name: "Baby Corn",
       description:
         "Grown in the fertile soils of Kenya's Rift Valley and the Eastern regions, our Baby Corn thrives in the warm climate. These miniature cobs are tender and pale, with a sweet, mild flavor. Low in calories and high in fiber, Baby Corn adds a delightful crunch to your dishes. They are selected, sorted, and packed in eco-friendly, moisture-resistant packaging, ensuring their freshness on arrival.",
@@ -67,7 +67,7 @@ const Products = () => {
               <span className="text-[#0B8308] font-semibold">
                 {product.name}
               </span>{" "}
-              <span className="text-sm">, {product.description}</span>
+              <span className="text-xs">, {product.description}</span>
             </div>
           </div>
         ))}

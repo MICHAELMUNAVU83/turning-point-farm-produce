@@ -24,7 +24,7 @@ const NavBar = () => {
         </div>
         <div className="w-[20%] flex gap-2  items-center px-2">
           <IoIosCall className="text-[#6E9320]" />
-          <p>+(254) 726-237650</p>
+          <p>+254114285301</p>
         </div>
       </div>
       <p className="bg-[rgb(146,122,122)] h-[1px] w-[100%]" />
